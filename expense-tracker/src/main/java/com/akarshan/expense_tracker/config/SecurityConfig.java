@@ -38,6 +38,8 @@ public class SecurityConfig {
                                 "/swagger-ui/**",  // If using Swagger
                                 "/v3/api-docs/**"  // If using OpenAPI
                         ).permitAll()
+                        .requestMatchers("/api/expenses/**")
+                        .authenticated()
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(session -> session
