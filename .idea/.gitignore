@@ -1,0 +1,34 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+bin/
+*.swp
+*.patch
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+application.properties  # Exclude if containing secrets
+application-dev.properties
+
+# Mac
+.DS_Store
+
+## Frontend (if you'll add later)
+#node_modules/
+#dist/
